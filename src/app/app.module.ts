@@ -1,3 +1,4 @@
+import { ProductsService } from './services/products.service';
 import { InfomationService } from './services/infomation.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -30,7 +31,8 @@ import { ProductsComponent } from './component/products/products.component';
     app_routing
   ],
   providers: [
-    InfomationService
+    InfomationService,
+    ProductsService
   ],
   bootstrap: [AppComponent]
 })

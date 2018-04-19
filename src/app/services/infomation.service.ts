@@ -27,7 +27,6 @@ export class InfomationService {
    public data_about_us() {
     this.http.get('https://portfolio-5b914.firebaseio.com/Team.json')
     .subscribe( data => {
-      //console.log(data.json());
       this.loaded_about = true;
       this.team = data.json();
     });
