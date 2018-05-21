@@ -1,3 +1,4 @@
+import {JsonpModule} from '@angular/http';
 import { ProductsService } from './services/products.service';
 import { InfomationService } from './services/infomation.service';
 import { BrowserModule } from '@angular/platform-browser';
@@ -15,6 +16,8 @@ import { AboutComponent } from './component/about/about.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { ProductsComponent } from './component/products/products.component';
 
+
+
 @NgModule({
     declarations: [
     AppComponent,
@@ -26,6 +29,7 @@ import { ProductsComponent } from './component/products/products.component';
     ProductsComponent
   ],
   imports: [
+    JsonpModule,
     BrowserModule,
     HttpModule,
     app_routing
