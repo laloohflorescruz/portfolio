@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
 
 @Component({
   selector: 'products',
@@ -7,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
-
+  constructor(private route: ActivatedRoute) {
+    route.params.subscribe(parameters => {
+      console.log(parameters);
+      console.log(parameters['id']);
+   });
   }
 }

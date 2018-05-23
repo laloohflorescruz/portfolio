@@ -3493,3 +3493,7 @@
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
 }
+svg path,
+svg rect{
+  fill: black;
+}

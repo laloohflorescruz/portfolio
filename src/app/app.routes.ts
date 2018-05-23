@@ -13,7 +13,7 @@ const app_routes: Routes = [
   { path: 'home', component: PortafolioComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'products', component: ProductsComponent },
+  { path: 'products/:id', component: ProductsComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home'},
 ];
 
