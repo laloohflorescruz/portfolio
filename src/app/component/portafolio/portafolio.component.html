@@ -1,21 +1,16 @@
-    <section class="ae-container-fluid ae-container-fluid--inner rk-portfolio animated bounceInUp">
 
-      <div *ngIf="_ps.products.length > 0"
+<section class="ae-container-fluid ae-container-fluid--inner rk-portfolio animated bounceInUp">
+  <div  *ngIf=" _ps.products.length > 0 "
+  class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
 
-      class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
-
-        <a *ngFor="let products of _ps.products"
-         href="portfolio-item.html" class="rk-item ae-masonry__item"><img src="assets/img/ {{ products.url }}.jpg" alt="">
-          <div class="item-meta">
-            <h2>{{ products.titulo }}</h2>
-            <p>{{ products.categoria }}</p>
-          </div>
-        </a>
-
-
-
-
+    <a *ngFor="let products of _ps.products"
+      href="portfolio-item.html" class="rk-item ae-masonry__item">
+      <img src="assets/img/{{ products.url }}.jpg" alt="">
+      <div class="item-meta">
+        <h2>{{ products.titulo }}</h2>
+        <p>{{ products.categoria }}</p>
       </div>
+    </a>
 
-    </section>
-<h1>Por faolio</h1>
+  </div>
+</section>
