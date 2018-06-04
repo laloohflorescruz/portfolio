@@ -15,6 +15,11 @@ export class ProductsService {
     this.load_products();
   }
 
+  public load_product(cod: string) {
+    return this.http.get(`https://portfolio-5b914.firebaseio.com/Products/${cod}.json`);
+
+  }
+
 
   public load_products () {
     this.loading_products = true;
