@@ -1,3 +1,4 @@
+export { SearchComponent } from './search/search.component';
 export { ContactComponent } from './contact/contact.component';
 export { PortafolioComponent } from './portafolio/portafolio.component';
 export { AboutComponent } from './about/about.component';

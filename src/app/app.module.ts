@@ -15,6 +15,7 @@ import { PortafolioComponent } from './component/portafolio/portafolio.component
 import { AboutComponent } from './component/about/about.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { ProductsComponent } from './component/products/products.component';
+import { SearchComponent } from './component/search/search.component';
 
 
 
@@ -26,7 +27,8 @@ import { ProductsComponent } from './component/products/products.component';
     PortafolioComponent,
     AboutComponent,
     ContactComponent,
-    ProductsComponent
+    ProductsComponent,
+    SearchComponent
   ],
   imports: [
     JsonpModule,

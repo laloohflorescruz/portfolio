@@ -6,6 +6,7 @@ import {
   PortafolioComponent,
   ContactComponent,
   ProductsComponent,
+  SearchComponent,
 
  } from './component/index.paginas';
 
@@ -14,6 +15,7 @@ const app_routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'products/:id', component: ProductsComponent },
+  { path: 'buscar/:termino', component: SearchComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home'},
 ];
 

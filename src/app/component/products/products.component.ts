@@ -15,7 +15,7 @@ product: any = undefined;
     route.params.subscribe(parameters => {
     _ps.load_product(parameters ['id']).subscribe(res => {
       this.product = res.json();
-      console.log(this.product);
+      //console.log(this.product);
       });
    });
   }
